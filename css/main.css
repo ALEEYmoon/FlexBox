@@ -3,6 +3,48 @@
   padding: 0;
   box-sizing: border-box;
 }
-* a {
-  text-decoration: none;
+
+.flex-container {
+  border: 10px solid #7f00ff;
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+@media (max-width: 650px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+.flex-container .flex-item {
+  padding: 10px;
+  font: 900 60px "Roboto", sans-serif;
+  color: #fff;
+  text-align: center;
+  text-shadow: 4px 2px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  width: calc(33.3% - 10px);
+}
+.flex-container .flex-item.item-1 {
+  background-image: linear-gradient(45deg, #ff8177, #cf556c);
+}
+.flex-container .flex-item.item-2 {
+  background: linear-gradient(45deg, #84fab0, #8fd3f4);
+}
+.flex-container .flex-item.item-3 {
+  background: linear-gradient(45deg, #a6c0fe, #f68084);
+}
+.flex-container .flex-item.item-4 {
+  background: linear-gradient(45deg, #d4fc79, #96e6a1);
+}
+.flex-container .flex-item.item-5 {
+  background: linear-gradient(45deg, #43e97b, #38f9d7);
+}
+.flex-container .flex-item.item-6 {
+  background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+}
+.flex-container .flex-item.item-7 {
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+.flex-container .flex-item.item-8 {
+  background: linear-gradient(45deg, #e1eec3, #f05053);
 }
